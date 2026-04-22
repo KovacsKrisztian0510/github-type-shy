@@ -2,7 +2,7 @@
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
-    <title>GitHub előnyei és hátrányai</title>
+    <title>GitHub útmutató</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -21,32 +21,30 @@
             color: #58a6ff;
         }
 
+        h2 {
+            color: #79c0ff;
+        }
+
         .container {
-            display: flex;
-            flex-wrap: wrap;
             padding: 20px;
         }
 
-        .card {
-            flex: 1;
-            min-width: 300px;
-            margin: 10px;
+        .section {
+            margin-bottom: 30px;
             padding: 20px;
+            background-color: #161b22;
             border-radius: 10px;
         }
 
-        .pros {
-            background-color: #12261b;
-            border-left: 5px solid #2ea043;
-        }
+        .pros { border-left: 5px solid #2ea043; }
+        .cons { border-left: 5px solid #f85149; }
 
-        .cons {
-            background-color: #2a1215;
-            border-left: 5px solid #f85149;
-        }
-
-        ul {
-            line-height: 1.8;
+        code {
+            background-color: #0d1117;
+            padding: 5px;
+            border-radius: 5px;
+            display: block;
+            margin: 5px 0;
         }
 
         footer {
@@ -60,39 +58,71 @@
 <body>
 
 <header>
-    <h1>GitHub – Előnyök és Hátrányok</h1>
-    <p>Rövid áttekintés fejlesztőknek</p>
+    <h1>GitHub – Teljes Alap Útmutató</h1>
+    <p>Előnyök, hátrányok, parancsok és fogalmak</p>
 </header>
 
 <div class="container">
-    <div class="card pros">
+
+    <div class="section pros">
         <h2>✅ Előnyök</h2>
         <ul>
-            <li>Verziókezelés (Git alapokon)</li>
-            <li>Könnyű együttműködés más fejlesztőkkel</li>
-            <li>Ingyenes publikus repository-k</li>
+            <li>Verziókezelés (Git)</li>
+            <li>Könnyű csapatmunka</li>
+            <li>Ingyenes publikus projektek</li>
             <li>GitHub Pages (weboldal hosting)</li>
-            <li>Nagy közösség és open-source projektek</li>
-            <li>Pull request és code review rendszer</li>
-            <li>CI/CD integrációk</li>
+            <li>Nagy fejlesztői közösség</li>
         </ul>
     </div>
 
-    <div class="card cons">
+    <div class="section cons">
         <h2>❌ Hátrányok</h2>
         <ul>
-            <li>Tanulási görbe kezdőknek (Git bonyolult lehet)</li>
-            <li>Privát repo-k korlátozásai (ingyenes csomagban)</li>
-            <li>Függés egy külső szolgáltatótól</li>
-            <li>Időnkénti downtime</li>
-            <li>Nem teljesen kezdőbarát felület</li>
-            <li>Nagy projektek kezelése néha lassú lehet</li>
+            <li>Kezdőknek nehéz lehet</li>
+            <li>Git parancsok bonyolultak</li>
+            <li>Internet kell a használathoz</li>
         </ul>
     </div>
+
+    <div class="section">
+        <h2>💻 Alap Git parancsok</h2>
+
+        <p>Repository létrehozása:</p>
+        <code>git init</code>
+
+        <p>Fájlok hozzáadása:</p>
+        <code>git add .</code>
+
+        <p>Commit (mentés):</p>
+        <code>git commit -m "első commit"</code>
+
+        <p>Kapcsolódás GitHubhoz:</p>
+        <code>git remote add origin URL</code>
+
+        <p>Feltöltés:</p>
+        <code>git push -u origin main</code>
+
+        <p>Frissítés letöltése:</p>
+        <code>git pull</code>
+    </div>
+
+    <div class="section">
+        <h2>📚 Fontos fogalmak</h2>
+
+        <ul>
+            <li><strong>Repository (repo):</strong> Projekt tároló</li>
+            <li><strong>Commit:</strong> Egy mentési állapot</li>
+            <li><strong>Branch:</strong> Külön fejlesztési ág</li>
+            <li><strong>Merge:</strong> Két ág egyesítése</li>
+            <li><strong>Pull request:</strong> Kód módosítás javaslat</li>
+            <li><strong>Clone:</strong> Repo letöltése gépre</li>
+        </ul>
+    </div>
+
 </div>
 
 <footer>
-    <p>Készítette: Te 😎 | GitHub projekt</p>
+    <p>Készítette: Te 🚀 | GitHub projekt</p>
 </footer>
 
 </body>
